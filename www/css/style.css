@@ -20,6 +20,7 @@ label{
 
 .link{
     text-decoration: none;
+    display: block;
 }
 
 .link:hover{
@@ -42,6 +43,27 @@ td{
 }
 
 .valeur{
-   
+   font-size: 1.5em;
+   top: 50%;
+   position: absolute;
+   left: 45%;
 
+}
+
+.icone{
+    font-size: 2em;
+    position: absolute;
+    left: 75%;
+    top: 45%;
+}
+
+.ico{
+    font-size: 2em;
+    position: absolute;
+    left: 90%;
+    top: 45%;
+}
+
+.titre{
+    font-family: Helvetica;
 }
