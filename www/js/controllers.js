@@ -44,7 +44,22 @@ function ($scope, $stateParams) {
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
+/**
+ * Fonctions ajout et diminu ajouter par moi !
+ */
 
+$scope.ajout = function (){
+    var val = parseInt(document.getElementById('val').textContent)
+   document.getElementById('val').innerHTML = val + 1
+}
+
+$scope.diminu = function (){
+    var val = parseInt(document.getElementById('val').textContent)
+   document.getElementById('val').innerHTML = val - 1
+   if(val == 0){
+       document.getElementById('val').innerHTML = 0
+   }
+}
 
 }])
    
