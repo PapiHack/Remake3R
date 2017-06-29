@@ -1,18 +1,9 @@
-<ion-view style="" title="Infos points de collecte">
+<ion-view title="Infos points de collecte">
  
  
     <ion-content padding="true" class="has-header">
 
-      <!--table>
-        <caption>Dechets</caption>
-    <tr>
-      <td> <img src="img/bouteille.png" class="dechet"/> <span class="valeur">50</span> </td>
-      <td> <i class="ion-android-add"></i> </td>
-    </tr> 
-
-  </table-->
-
-  <h1 class="titre">Tri selectif</h1>
+  <h2 class="titre">Tri selectif</h2>
 
 <div class="list">
   <div class="item item-divider">
@@ -54,11 +45,11 @@
   <div class="button-bar">
     <button class="button button-assertive button-block icon-right ion-android-cancel">Annuler</button>
     <button class="button button-balanced button-block icon-right ion-checkmark">Valider</button>
-  </div>  <br/> <br/>
+  </div>  <br/> <br/> <br/>
 
     </ion-content>
     
-    <ion-tabs class="tabs-positive">
+    <ion-tabs class="tabs-stripped tabs-positive">
 
     <ion-tab title="Home" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline">
       <!-- Tab 1 content -->
@@ -71,8 +62,41 @@
   </ion-content>
    
   <ion-content>
- <h1>Salut les gens !</h1>
- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sint provident fugiat nobis non adipisci minus saepe enim, laudantium reprehenderit aliquid, eius ratione modi vero ipsa suscipit alias cumque cupiditate?</p>
+
+    <h2 class="titre">Paramètres du point de collecte</h2> <br/>
+    
+ <form class="list" id="ajouterPointDeCollecte-form7">
+      <label name="libelle" id="ajouterPointDeCollecte-input17" class="item item-input item-floating-label">
+        <span class="input-label">Nom</span>
+        <input placeholder="Nom du point de collecte" type="text" ng-model="nom"/>
+      </label>
+      <label for="type" id="ajouterPointDeCollecte-select3" class="item item-select">
+        <span class="input-label">Type</span>
+        <select name="type" id="type">
+          <option value="maison">Maison</option>
+          <option value="depot">Depôt</option>
+          <option value="quartier">Quartier</option>
+          <option value="bureau">Bureau</option>
+        </select>
+      </label>
+    </form>
+
+    <div>
+      <label class="input-label">Localisation</label>
+    </div>
+
+    <div>
+      <creator-map-component options="{}" marker="true" location="Dakar" zoom="12" style="display:block;position:relative;margin-left:-10px;width:calc(100% + 20px);height:300px;">
+      <ui-gmap-google-map ng-if="map.center" center="map.center" zoom="map.zoom" options="map.options">
+        <ui-gmap-marker coords="map.marker.coords" idkey="map.marker.id" options="map.marker.options"></ui-gmap-marker>
+      </ui-gmap-google-map>
+    </creator-map-component>
+    </div> <br/>
+
+    <div class="button-bar" id="ajouterPointDeCollecte-button-bar1">
+      <button class="button button-assertive button-block icon-right ion-android-cancel" id="ajouterPointDeCollecte-button15">Annuler</button>
+      <button class="button button-balanced button-block icon-right ion-checkmark" id="ajouterPointDeCollecte-button16">Valider</button>
+    </div>
   </ion-content>
 
     </ion-tab>

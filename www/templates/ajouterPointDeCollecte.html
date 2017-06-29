@@ -1,17 +1,17 @@
-<ion-view style="" id="page10" title="Ajouter point de collecte">
+<ion-view id="page10" title="Ajouter point de collecte">
   <ion-content class="has-header" padding="true">
     <form class="list" id="ajouterPointDeCollecte-form7">
       <label name="libelle" id="ajouterPointDeCollecte-input17" class="item item-input item-floating-label">
         <span class="input-label">Nom</span>
-        <input placeholder="Nom du point de collecte" type="text">
+        <input placeholder="Nom du point de collecte" type="text" ng-model="nom"/>
       </label>
-      <label name="type" id="ajouterPointDeCollecte-select3" class="item item-select">
+      <label for="type" id="ajouterPointDeCollecte-select3" class="item item-select">
         <span class="input-label">Type</span>
-        <select>
-          <option>Maison</option>
-          <option>Depôt</option>
-          <option>Quartier</option>
-          <option>Bureau</option>
+        <select name="type" id="type">
+          <option value="maison">Maison</option>
+          <option value="depot">Depôt</option>
+          <option value="quartier">Quartier</option>
+          <option value="bureau">Bureau</option>
         </select>
       </label>
     </form>
