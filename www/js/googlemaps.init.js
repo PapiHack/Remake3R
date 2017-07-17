@@ -71,4 +71,17 @@ angular.module('googlemaps.init', ['uiGmapgoogle-maps'])
             }
       
         };
-}]);
+}])
+
+ .controller("MapCtrl", function($scope, uiGmapGoogleMapApi) {
+     var map = $scope.myMap
+    uiGmapGoogleMapApi.then(function(maps) {
+     // write your code here
+     // (google is defined)
+     //alert('Salut! ')
+     google.maps.event.addListener(map, "click", function() {
+      /*stuff*/ 
+      alert('salut')
+});
+    });
+});

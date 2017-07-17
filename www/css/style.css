@@ -68,3 +68,13 @@ td{
 .titre{
     font-family: Helvetica;
 }
+
+.libe{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.but{
+    text-decoration: none;
+    font-size: 1.2em;
+}
