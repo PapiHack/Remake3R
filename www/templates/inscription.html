@@ -10,6 +10,10 @@
           <span class="input-label">Prenom</span>
           <input placeholder="Prenom" type="text" ng-model="prenom"/>
         </label>
+        <label name="nom" id="inscription-input5" class="item item-input item-floating-label">
+          <span class="input-label">Pseudo</span>
+          <input placeholder="Pseudo" type="text" ng-model="pseudo"/>
+        </label>
         <label name="mail" id="inscription-input6" class="item item-input item-floating-label mail">
           <span class="input-label">Email</span>
           <input placeholder="Email" type="email" ng-model="mail"/>
@@ -29,19 +33,19 @@
       </ion-list>
       <label for="categorie" id="inscription-select1" class="item item-select sexe">
         <span class="input-label">Vous êtes</span>
-        <select name="categorie" id="categorie">
+        <select name="categorie" id="categorie" ng-model="categ">
           <option value="acheteur">Acheteur</option>
           <option value="collecteur">Collecteur</option>
         </select>
       </label>
       <label for="sexe" id="inscription-select2" class="item item-select sexe">
         <span class="input-label">Sexe</span>
-        <select name="sexe" id="sexe">
+        <select name="sexe" id="sexe" ng-model="sexe">
           <option value="femme">Femme</option>
           <option value="homme">Homme</option>
         </select>
       </label>
-      <button class="button button-balanced button-block" id="inscription-button10">Sign up</button>
+      <button class="button button-balanced button-block" ng-click="sign()" id="inscription-button10">Sign up</button>
       <input value="Reset" class="button button-assertive button-block" type="reset"/>
     </form>
   </ion-content>
